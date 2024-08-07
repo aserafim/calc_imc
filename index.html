@@ -11,10 +11,10 @@
         <h1>Calculadora de IMC</h1>
         <form id="imcForm">
             <label for="altura">Altura (cm):</label>
-            <input type="number" id="altura" name="altura" required>
+            <input class="altura" type="number" pattern="[0-9]+([,\.][0-9]+)?" min="0" step="any" id="altura" name="altura" required>
 
             <label for="peso">Peso (kg):</label>
-            <input type="number" id="peso" name="peso" required>
+            <input type="number" pattern="[0-9]+([,\.][0-9]+)?" min="0" step="any" id="peso" name="peso" required>
 
             <label for="idade">Idade:</label>
             <input type="number" id="idade" name="idade" required>
@@ -26,7 +26,7 @@
                 <option value="feminino">Feminino</option>
             </select>
 
-            <button type="submit">Calcular IMC</button>
+            <button class="cacular__button" type="submit">Calcular IMC</button>
         </form>
     </div>
     <script src="script.js"></script>
